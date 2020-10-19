@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: linear-gradient(
+    0deg,
+    rgba(58, 51, 53, 0) 0%,
+    rgba(58, 51, 53, 1) 40%
+  );
+}
+
+.top-margin {
+  height: 50px;
+  background-color: #3a3335;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo h1 {
+  padding: 10px;
+  font-family: "Bungee Hairline", cursive;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  width: 60%;
+}
+
+li,
+a,
+button {
+  font-family: "Bungee", cursive;
+  font-size: 16px;
+  color: #fdf0d5;
+  letter-spacing: 2px;
+}
+
+.profilepic {
+  width: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.nav-links li {
+  padding: 10px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #eb5e55;
+}
+
+button {
+  padding: 10px 40px;
+  margin-right: 40px;
+  background-color: #65655e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+
+button:hover {
+  background-color: #06bcc1;
+}
+
+.container {
+  background-color: #3a3335;
+}
+
+.container h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 100px 20px 20px 40px;
+  font-family: "Bungee Hairline", cursive;
+  font-size: 34px;
+  color: #eb5e55;
+  transition: all 2s ease 0s;
+}
+
+.container h2:hover {
+  color: #ffffff;
+}
+
+.container h3 {
+  display: flex;
+  padding: 30px;
+  font-family: "Bungee Hairline", cursive;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.container p {
+  padding: 0px 30px 30px 30px;
+  font-family: "Text Me One", sans-serif;
+  font-size: 16px;
+  color: #fdf0d5;
+}
+
+.container p.japanese {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.container a {
+  display: flex;
+  justify-content: center;
+}
+
+.preview {
+  background-color: #ffffff;
+  height: 300px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2px;
+  border-color: #65655e;
+  transition: all 1s ease 0s;
+}
+
+.preview:hover {
+  height: 400px;
+  border-width: 4px;
+}
+
+.bottom-margin {
+  display: flex;
+  height: 200px;
+  animation-iteration-count: infinite;
+  animation-name: page;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+@keyframes page {
+  0% {
+    background-color: #65655e;
+  }
+  50% {
+    background-color: #06bcc1;
+  }
+  100% {
+    background-color: #65655e;
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.iconpic {
+  height: 70px;
+  margin: 20px;
+}
